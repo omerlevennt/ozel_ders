@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ozel_ders/product/extension/context_extension.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
@@ -13,7 +14,10 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text(appBarTitle),
+      title: Text(
+        appBarTitle,
+        style: context.textTheme.bodySmall,
+      ),
       leading: leading,
       actions: [
         actions,

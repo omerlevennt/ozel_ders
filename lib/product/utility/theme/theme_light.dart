@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ozel_ders/product/decoration/outline_input_border_decoration.dart';
 import 'package:ozel_ders/product/utility/theme/theme_color.dart';
 
 final class LightTheme {
@@ -18,11 +19,6 @@ final class LightTheme {
             size: 28,
           ),
           centerTitle: true,
-          titleTextStyle: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: ThemeColor.oxfordBlue,
-            fontSize: 18,
-          ),
         ),
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
           shape: CircleBorder(),
@@ -32,18 +28,33 @@ final class LightTheme {
         inputDecorationTheme: const InputDecorationTheme(
           filled: true,
           fillColor: ThemeColor.white,
-          border: OutlineInputBorder(
-            borderSide: BorderSide(color: ThemeColor.alto),
+          hintStyle: TextStyle(
+            color: ThemeColor.oxfordBlue,
+            fontSize: 16,
           ),
-          disabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: ThemeColor.alto),
+          border: OutlineInputBorderDecoration(),
+          focusedBorder: OutlineInputBorderDecoration(),
+          enabledBorder: OutlineInputBorderDecoration(),
+        ),
+        textTheme: const TextTheme(
+          bodySmall: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: ThemeColor.oxfordBlue,
+            fontSize: 18,
           ),
-          focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: ThemeColor.alto),
-          ),
-          enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: ThemeColor.alto),
-          ),
+        ),
+        tabBarTheme: const TabBarTheme(
+          labelColor: ThemeColor.royalBlue,
+          unselectedLabelColor: ThemeColor.oxfordBlue,
+          indicatorSize: TabBarIndicatorSize.label,
+          indicatorColor: ThemeColor.royalBlue,
+          dividerColor: ThemeColor.transparent,
+        ),
+        bottomAppBarTheme: const BottomAppBarTheme(
+          elevation: 0,
+          padding: EdgeInsets.zero,
+          color: ThemeColor.white,
+          shape: CircularNotchedRectangle(),
         ),
       );
 }

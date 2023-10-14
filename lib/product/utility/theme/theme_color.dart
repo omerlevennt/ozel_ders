@@ -12,6 +12,7 @@ final class ThemeColor {
       SystemUiOverlayStyle.dark;
 
   static const Color white = Color(0xffffffff);
+  static const Color royalBlue = Color(0xff2952E4);
   static const Color oxfordBlue = Color(0xff374957);
   static const Color concrete = Color(0xfff3f3f3);
   static const Color bayLeaf = Color(0xff85B09A);

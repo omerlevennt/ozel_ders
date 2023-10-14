@@ -4,7 +4,6 @@ import 'package:ozel_ders/product/utility/padding/only_padding.dart';
 import 'package:ozel_ders/product/utility/padding/symmetric_padding.dart';
 import 'package:ozel_ders/product/utility/theme/theme_color.dart';
 import 'package:ozel_ders/product/widget/appBar/custom_app_bar.dart';
-import 'package:ozel_ders/product/widget/button/add_fab_button.dart';
 import 'package:ozel_ders/product/widget/textField/search_bar.dart';
 
 class HomeView extends StatefulWidget {
@@ -19,9 +18,6 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const _HomeViewAppBar(),
-      floatingActionButton: const AddFabButton(),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      extendBody: true,
       body: Padding(
         padding: PagePadding.horizontalNormal,
         child: Column(
