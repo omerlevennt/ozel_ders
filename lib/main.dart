@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ozel_ders/feature/tab_view.dart';
-import 'package:ozel_ders/product/utility/constants/main_constants.dart';
+import 'package:ozel_ders/feature/splash/splash_view.dart';
+import 'package:ozel_ders/product/utility/constants/constants.dart';
 import 'package:ozel_ders/product/utility/theme/theme_light.dart';
 
 void main() => runApp(const MyApp());
@@ -12,9 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: MainConstants.title,
+      title: Constants.title,
       theme: LightTheme().lightTheme,
-      home: const TabView(),
+      home: const SplashView(),
     );
   }
 }

@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:ozel_ders/product/utility/constants/locale_keys.dart';
 import 'package:ozel_ders/product/utility/padding/only_padding.dart';
 import 'package:ozel_ders/product/utility/padding/symmetric_padding.dart';
+import 'package:ozel_ders/product/utility/size/widget_custom_size.dart';
+import 'package:ozel_ders/product/utility/size/widget_size.dart';
 import 'package:ozel_ders/product/utility/theme/theme_color.dart';
 import 'package:ozel_ders/product/widget/appBar/custom_app_bar.dart';
+import 'package:ozel_ders/product/widget/divider/custom_divider.dart';
 import 'package:ozel_ders/product/widget/textField/search_bar.dart';
 
 class HomeView extends StatefulWidget {
@@ -28,13 +31,14 @@ class _HomeViewState extends State<HomeView> {
             ),
             Expanded(
               child: ListView.separated(
+                physics: const AlwaysScrollableScrollPhysics(),
                 padding: EdgeInsets.zero,
                 shrinkWrap: true,
                 itemBuilder: (context, index) {
                   return SizedBox(
-                    height: MediaQuery.sizeOf(context).height * 0.25,
+                    height: WidgetCustomSize.header.value,
                     child: const Card(
-                      elevation: 0,
+                      elevation: WidgetSizes.zero,
                       color: ThemeColor.concrete,
                       child: Row(
                         children: [
@@ -55,10 +59,7 @@ class _HomeViewState extends State<HomeView> {
                   );
                 },
                 separatorBuilder: (context, index) {
-                  return const Divider(
-                    thickness: 5,
-                    color: ThemeColor.concrete,
-                  );
+                  return const CustomDivider();
                 },
                 itemCount: 5,
               ),
@@ -81,7 +82,7 @@ class _SearchBar extends StatelessWidget {
         Padding(
           padding: OnlyPadding.onlyLeftLow,
           child: Card(
-            elevation: 0,
+            elevation: WidgetSizes.zero,
             color: ThemeColor.concrete,
             margin: EdgeInsets.zero,
             child: IconButton(
@@ -105,11 +106,17 @@ class _HomeViewAppBar extends StatelessWidget implements PreferredSizeWidget {
       appBarTitle: LocaleKeys.home,
       leading: IconButton(
         onPressed: () {},
-        icon: const Icon(Icons.menu),
+        icon: Image.asset(
+          'assets/icons/ic_menu.png',
+          color: ThemeColor.oxfordBlue,
+        ),
       ),
       actions: IconButton(
         onPressed: () {},
-        icon: const Icon(Icons.notifications_outlined),
+        icon: Image.asset(
+          'assets/icons/ic_notification.png',
+          color: ThemeColor.oxfordBlue,
+        ),
       ),
     );
   }

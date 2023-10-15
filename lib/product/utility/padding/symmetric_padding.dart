@@ -7,6 +7,8 @@ final class PagePadding {
 
   static const EdgeInsets horizontalNormal =
       EdgeInsets.symmetric(horizontal: WidgetSizes.spacingM);
+  static const EdgeInsets verticalLow =
+      EdgeInsets.symmetric(vertical: WidgetSizes.spacingXSs);
   static const EdgeInsets verticalNormal =
       EdgeInsets.symmetric(vertical: WidgetSizes.spacingM);
 }
