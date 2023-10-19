@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ozel_ders/feature/splash/splash_view.dart';
+import 'package:ozel_ders/feature/view/splash_view.dart';
 import 'package:ozel_ders/product/utility/constants/constants.dart';
 import 'package:ozel_ders/product/utility/theme/theme_light.dart';
 

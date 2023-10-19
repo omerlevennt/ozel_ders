@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ozel_ders/feature/home/tab_view.dart';
+import 'package:ozel_ders/feature/view/home/tab_view.dart';
 import 'package:ozel_ders/product/extension/context_extension.dart';
 
 class SplashView extends StatefulWidget {
@@ -9,7 +9,18 @@ class SplashView extends StatefulWidget {
   State<SplashView> createState() => _SplashViewState();
 }
 
-class _SplashViewState extends State<SplashView> {
+class _SplashViewState extends State<SplashView> with _SplashViewMixin {
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: Center(
+        child: CircularProgressIndicator(),
+      ),
+    );
+  }
+}
+
+mixin _SplashViewMixin on State<SplashView> {
   @override
   void initState() {
     super.initState();
@@ -28,14 +39,5 @@ class _SplashViewState extends State<SplashView> {
         ),
       );
     });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: CircularProgressIndicator(),
-      ),
-    );
   }
 }

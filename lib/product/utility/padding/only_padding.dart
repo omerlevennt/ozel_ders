@@ -7,4 +7,6 @@ final class OnlyPadding {
 
   static const EdgeInsets onlyLeftLow =
       EdgeInsets.only(left: WidgetSizes.spacingXs);
+  static const EdgeInsets onlyTopLow =
+      EdgeInsets.only(top: WidgetSizes.spacingXs);
 }

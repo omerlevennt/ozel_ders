@@ -29,6 +29,7 @@ final class LightTheme {
           hintStyle: TextStyle(
             color: ThemeColor.oxfordBlue,
             fontSize: WidgetSizes.spacingM,
+            fontWeight: FontWeight.normal,
           ),
           border: OutlineInputBorderDecoration(),
           focusedBorder: OutlineInputBorderDecoration(),
@@ -44,6 +45,16 @@ final class LightTheme {
             fontSize: WidgetSizes.spacingMx,
           ),
           titleLarge: TextStyle(
+            decorationThickness: 0.0000001,
+            color: ThemeColor.oxfordBlue,
+          ),
+          titleMedium: TextStyle(
+            decorationThickness: 0.0000001,
+            color: ThemeColor.oxfordBlue,
+            fontWeight: FontWeight.w700,
+            fontSize: 14,
+          ),
+          titleSmall: TextStyle(
             decorationThickness: 0.0000001,
             color: ThemeColor.oxfordBlue,
           ),

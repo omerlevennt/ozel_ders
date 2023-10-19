@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:ozel_ders/feature/home/home_view.dart';
-import 'package:ozel_ders/feature/messages/messages_view.dart';
-import 'package:ozel_ders/feature/plan/plan_view.dart';
-import 'package:ozel_ders/feature/profile/profile_view.dart';
+import 'package:ozel_ders/feature/view/home/home_view.dart';
+import 'package:ozel_ders/feature/view/messages_view.dart';
+import 'package:ozel_ders/feature/view/plan_view.dart';
+import 'package:ozel_ders/feature/view/profile_view.dart';
 import 'package:ozel_ders/product/utility/constants/constants.dart';
+import 'package:ozel_ders/product/utility/constants/image_constants.dart';
 import 'package:ozel_ders/product/utility/size/widget_size.dart';
 import 'package:ozel_ders/product/utility/theme/theme_color.dart';
 import 'package:ozel_ders/product/widget/button/add_fab_button.dart';
@@ -53,19 +54,19 @@ class _TabViewState extends State<TabView> with TickerProviderStateMixin {
       tabs: <Widget>[
         TabBarItems(
           icon: Image.asset(
-            'assets/icons/ic_search.png',
+            ImageConstants.icSearch,
             color: ThemeColor.oxfordBlue,
           ),
         ),
         TabBarItems(
           icon: Image.asset(
-            'assets/icons/ic_message.png',
+            ImageConstants.icMessage,
             color: ThemeColor.oxfordBlue,
           ),
         ),
         TabBarItems(
           icon: Image.asset(
-            'assets/icons/ic_calendar.png',
+            ImageConstants.icCalendar,
             color: ThemeColor.oxfordBlue,
           ),
         ),

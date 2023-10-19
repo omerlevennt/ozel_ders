@@ -1,6 +1,6 @@
 enum WidgetCustomSize {
   //size is [300]
-  header(250),
+  header(180),
 
   //size is [300]
   headerIcon(100);

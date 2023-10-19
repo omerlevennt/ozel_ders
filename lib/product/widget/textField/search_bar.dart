@@ -63,7 +63,8 @@ class SearchDelegateCustom extends SearchDelegate<bool> {
       itemBuilder: (BuildContext context, int index) {
         final result = matchQuery[index];
         return Padding(
-          padding: PagePadding.horizontalNormal + PagePadding.verticalLow,
+          padding:
+              SymmetricPadding.horizontalNormal + SymmetricPadding.verticalLow,
           child: InkWell(
             onTap: () {},
             child: CardSearchDelegate(text: result),
@@ -82,7 +83,8 @@ class SearchDelegateCustom extends SearchDelegate<bool> {
       itemBuilder: (BuildContext context, int index) {
         final result = matchQuery[index];
         return Padding(
-          padding: PagePadding.horizontalNormal + PagePadding.verticalLow,
+          padding:
+              SymmetricPadding.horizontalNormal + SymmetricPadding.verticalLow,
           child: InkWell(
             onTap: () {},
             child: CardSearchDelegate(text: result),
