@@ -9,6 +9,7 @@ final class ImageConstants {
   static final String icSearch = 'ic_search'.toPng;
   static final String icMessage = 'ic_message'.toPng;
   static final String icCalendar = 'ic_calendar'.toPng;
+  static final String icCap = 'ic_cap'.toPng;
 }
 
 extension on String {
