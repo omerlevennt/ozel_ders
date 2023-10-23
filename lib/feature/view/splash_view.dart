@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ozel_ders/feature/view/home/tab_view.dart';
+import 'package:ozel_ders/feature/view/on_board_view.dart';
 import 'package:ozel_ders/product/extension/context_extension.dart';
 
 class SplashView extends StatefulWidget {
@@ -29,12 +29,11 @@ mixin _SplashViewMixin on State<SplashView> {
 
   void _goToTabView() {
     Future.delayed(context.normalDuration, () {
-      Navigator.push(
-        context,
-        // ignore: inference_failure_on_instance_creation
+      Navigator.of(context).pushReplacement(
         MaterialPageRoute(
+          fullscreenDialog: true,
           builder: (context) {
-            return const TabView();
+            return const OnBoardView();
           },
         ),
       );

@@ -10,6 +10,9 @@ final class ImageConstants {
   static final String icMessage = 'ic_message'.toPng;
   static final String icCalendar = 'ic_calendar'.toPng;
   static final String icCap = 'ic_cap'.toPng;
+  static final String icFirstOnBoard = 'ic_first_on_board'.toPng;
+  static final String icSecondOnBoard = 'ic_second_on_board'.toPng;
+  static final String icThirdOnBoard = 'ic_third_on_board'.toPng;
 }
 
 extension on String {

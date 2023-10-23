@@ -76,5 +76,10 @@ final class LightTheme {
         ),
         progressIndicatorTheme:
             const ProgressIndicatorThemeData(color: ThemeColor.oxfordBlue),
+        elevatedButtonTheme: const ElevatedButtonThemeData(
+          style: ButtonStyle(
+            backgroundColor: MaterialStatePropertyAll(ThemeColor.royalBlue),
+          ),
+        ),
       );
 }
